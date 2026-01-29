@@ -1,0 +1,774 @@
+/* Custom css by Sukanta */
+
+.mobileButton,
+.closeButton {
+    display: none;
+}
+
+.footer .site_logo {
+    display: block;
+}
+
+.slick-slide img,
+.footer .site_logo img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Responsive Styles for CGDA Website */
+
+@media (max-width: 1700px) {
+    .gallery-grid .slick-prev,
+    .info_slide .slick-prev {
+        left: 0;
+    }
+    .gallery-grid .slick-next,
+    .info_slide .slick-next {
+        right: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    .footer .site_logo {
+        width: 300px;
+    }
+    .link_column ul {
+        width: 280px;
+    }
+    .link_column:nth-child(3) {
+        width: 120px;
+    }
+    .footer {
+        padding: 40px 40px 0;
+    }
+    .galleryPageContent li figure img {
+        height: 300px;
+    }
+    .pageContent {
+        padding: 20px 0 0;
+    }
+    .gallery-grid {
+        gap: 25px;
+        margin-bottom: 30px;
+    }
+    .gallery-grid .gallery-grid-item {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+    .nav-menu li a {
+        padding: 10px 14px;
+    }
+    #bannerSlider .item img {
+        /* height: 400px; */
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nav-menu {
+        background: #9b0000;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: block;
+        z-index: 50;
+        padding-top: 30px;
+        transition: all ease-in-out 0.2s;
+        -webkit-transition: all ease-in-out 0.2s;
+        -moz-transition: all ease-in-out 0.2s;
+        -ms-transition: all ease-in-out 0.2s;
+        -o-transition: all ease-in-out 0.2s;
+    }
+    .nav-menu li i.fa-home {
+        right: unset;
+        position: relative;
+        top: unset;
+        display: inline-block;
+    }
+    .nav-menu.change {
+        left: 0;
+    }
+    .nav-menu li a {
+        border-bottom: 3px solid transparent;
+    }
+    .nav-menu li:hover a {
+        background: rgba(255, 255, 255, 0.1);
+        border-bottom-color: #ff6b35;
+    }
+    .nav-menu li:hover>ul {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav-menu ul,
+    .nav-menu ul ul,
+    .nav-menu ul ul ul {
+        position: static;
+        width: 100%;
+        opacity: 1 !important;
+        box-shadow: unset;
+        border-bottom: 2px solid #ff6b35;
+        visibility: unset !important;
+        border-radius: unset;
+        -webkit-border-radius: unset;
+        -moz-border-radius: unset;
+        -ms-border-radius: unset;
+        -o-border-radius: unset;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+        transition: unset !important;
+        -webkit-transition: unset !important;
+        -moz-transition: unset !important;
+        -ms-transition: unset !important;
+        -o-transition: unset !important;
+    }
+    .nav-menu ul ul {
+        background: #ededed;
+        border-color: #ebc3b4;
+    }
+    .nav-menu ul ul li a {
+        padding-left: 30px;
+    }
+    .nav-menu ul li i {
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+    .nav-menu li i {
+        right: 10px;
+        position: absolute;
+        top: 16px;
+    }
+    /* .nav-menu ul>li:nth-child(2) a i {
+        position: static;
+        margin: 0 5px 0 0;
+    } */
+    .employeeInfo .status {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .employeeInfo p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .employeeInfo figure h2 small {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .employeePanel {
+        padding: 30px 0;
+    }
+    .employeeInfo,
+    .employeeData,
+    .employeeStatus,
+    .employeeActivity {
+        margin-bottom: 30px;
+    }
+    .employeeActivity {
+        grid-template-columns: 2.05fr 1fr;
+        grid-gap: 25px;
+    }
+    .mobileButton {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    /* Top, Middle, Bottom bars */
+    .mobileButton::before,
+    .mobileButton::after,
+    .mobileButton {
+        border-top: 3px solid #fff;
+    }
+    .mobileButton::before,
+    .mobileButton::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .mobileButton::before {
+        top: 4.6px;
+        /* Middle bar */
+    }
+    .mobileButton::after {
+        top: 14px;
+        /* Bottom bar */
+    }
+    .closeButton {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .closeButton::before,
+    .closeButton::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        transform-origin: center;
+    }
+    .closeButton::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .closeButton::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    .gallery-grid-item em {
+        margin: 12px;
+    }
+    .footer {
+        padding: 30px 20px 0;
+    }
+    .link_column:nth-child(1) {
+        width: 25% !important;
+    }
+    .footer .site_logo {
+        width: 215px;
+    }
+    .footer .social_info span {
+        font-size: 18px;
+    }
+    .social_info a {
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+        padding: 4px;
+    }
+    .main-gallery-section {
+        padding: 30px 0 20px;
+    }
+    .galleryPageContent li figure img {
+        height: 260px;
+    }
+    .key-functions {
+        padding: 80px 0 100px;
+    }
+    .honorPanel ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-top {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .org-info h1 {
+        font-size: 20px;
+    }
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .logo-section {
+        gap: 6px;
+    }
+    .org-info h1 {
+        font-size: 19px;
+        margin: 0;
+    }
+    .org-info p {
+        font-size: 14px;
+    }
+    .employeeActivity {
+        grid-template-columns: 1.3fr 1fr;
+    }
+    .activityBox h4 {
+        font-size: 20px;
+    }
+    .activityBox ul li figure i {
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+    }
+    .faq_nav {
+        margin-right: 30px;
+    }
+    .faq_nav a {
+        font-size: 19px;
+        padding: 15px;
+    }
+    .pageContent {
+        padding: 30px 0 0;
+    }
+    .faq_header h3 {
+        font-size: 25px;
+        line-height: 40px;
+        margin: 0 0 15px;
+    }
+    .custom_acc_trigger {
+        font-size: 17px;
+        line-height: 24px;
+        padding: 15px 30px 15px;
+    }
+    .about-hero {
+        padding: 40px 0 55px;
+    }
+    .footer {
+        padding: 40px 20px 0;
+    }
+    .link_column:nth-child(1),
+    .link_column {
+        width: 100% !important;
+    }
+    .footer .site_logo {
+        width: 300px;
+        margin: 0 auto;
+        float: none;
+        display: block;
+    }
+    .footer .site_logo img {
+        width: 100%;
+        height: auto;
+    }
+    .social_info {
+        width: 100%;
+        float: left;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .footer .social_info span {
+        padding: 0;
+    }
+    .social_info a {
+        margin: 0;
+    }
+    .link_column ul {
+        float: left;
+        width: 100%;
+    }
+    .link_column ul:nth-child(3) {
+        margin-bottom: 15px;
+    }
+    .f_bottom {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .landmarkPageCont {
+        gap: 30px;
+    }
+    .landmarkPageCont .yearBox {
+        margin: 0 !important;
+    }
+    .landmarkPageCont .detailsBox {
+        padding: 20px;
+        max-width: 612px;
+    }
+    .galleryPageContent li {
+        padding: 15px;
+    }
+    .galleryPageContent li figure img {
+        height: 200px;
+    }
+    .about-hero-content h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .general_content img {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .mvv-grid,
+    .functions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .honorPanel h3 {
+        font-size: 28px;
+    }
+}
+
+
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo-section {
+        justify-content: center;
+    }
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-menu li a {
+        padding: 12px 20px 12px 30px;
+        color: #fff;
+    }
+    .hero-section {
+        height: 400px;
+    }
+    .slide-content h1 {
+        font-size: 28px;
+    }
+    .slide-content p {
+        font-size: 16px;
+    }
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .banner-text h2 {
+        font-size: 22px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .officers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .micro-sites-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .footer-bottom-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    .partner-logos {
+        justify-content: center;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .gallery-grid-item figure img {
+        height: 400px;
+    }
+    .employeeInfo {
+        padding: 20px;
+    }
+    .employeeInfo figure h2 {
+        font-size: 22px;
+    }
+    .employeeInfo p {
+        font-size: 12px;
+        line-height: 17px;
+        margin-top: 12px;
+    }
+    .employeeInfo p span {
+        margin-right: 15px;
+    }
+    .employeeInfo p span i {
+        font-size: 13px;
+        margin-right: 3px;
+        padding: 6px;
+    }
+    .employeeData ul,
+    .employeeStatus ul,
+    .employeeActivity {
+        grid-template-columns: 1fr;
+    }
+    .employeeData ul li {
+        padding: 20px;
+    }
+    .faq_content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .faq_nav {
+        margin-right: 0px;
+        display: flex;
+        gap: 20px;
+        padding: 15px 0;
+        justify-content: center;
+    }
+    .faq_nav a {
+        border: none;
+        padding: 0px !important;
+    }
+    .faq_nav a.current,
+    .faq_nav a:hover {
+        background: #fff;
+        color: #ff6b35;
+    }
+    .faq_nav a i {
+        display: none;
+    }
+    .about-hero-content h1 {
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .nav-bar.sticky {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        z-index: 999;
+    }
+    .faq_header {
+        grid-template-columns: 1fr;
+    }
+    .control {
+        right: 0;
+        bottom: 5px;
+    }
+    .contactContent {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        border: none;
+        border-top: 3px solid #ff6b35;
+    }
+    .map {
+        padding-bottom: 0;
+    }
+    .landmarkPageCont {
+        gap: 30px;
+        flex-direction: column !important;
+    }
+    .landmarkPageCont:last-child::before {
+        display: block !important;
+        top: -20px;
+    }
+    .galleryPageContent ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .formDesk ul li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .formDesk ul li p {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0 0 12px;
+    }
+    .formDesk {
+        padding: 30px 0 50px;
+    }
+    .honorPanel ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header_search {
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+    }
+    .general_content h2 {
+        font-size: 30px;
+    }
+    .general_content {
+        padding: 0px 0 60px;
+    }
+    .imgBox img {
+        width: 470px;
+    }
+}
+
+
+/* Small Mobile Styles */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    .org-info h1 {
+        font-size: 18px;
+    }
+    .org-info p {
+        font-size: 14px;
+    }
+    .celebration-logos {
+        gap: 10px;
+    }
+    .celebration-logo {
+        width: 50px;
+        height: 50px;
+    }
+    .slide-content h1 {
+        font-size: 24px;
+    }
+    .banner-text h2 {
+        font-size: 20px;
+    }
+    .banner-text p {
+        font-size: 14px;
+    }
+    .officers-grid {
+        grid-template-columns: 1fr;
+    }
+    .quick-links-grid {
+        grid-template-columns: 1fr;
+    }
+    .accessibility-tools {
+        gap: 3px;
+    }
+    .accessibility-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .org-info h1 {
+        font-size: 18px;
+        text-align: left;
+        line-height: 22px;
+        margin-bottom: 6px;
+    }
+    .org-info p {
+        text-align: left;
+    }
+    .employeeInfo figure h2 {
+        font-size: 19px;
+        line-height: 26px;
+    }
+    .employeeInfo figure h2 small {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    .employeeInfo p {
+        display: block;
+    }
+    .employeeInfo p span {
+        margin: 0;
+        display: block;
+    }
+    .header-right {
+        padding-top: 10px;
+    }
+    .header-right .btn {
+        padding: 7px 20px 6px;
+    }
+    .activityBox ul li {
+        padding: 12px 7px 12px 12px;
+    }
+    .activityBox ul li span {
+        font-size: 13px;
+    }
+    .header-actions,
+    .celebration-logos {
+        justify-content: center;
+        width: 100%;
+    }
+    .faq_nav {
+        gap: 15px;
+        padding: 8px 0;
+        justify-content: center;
+        text-align: center;
+    }
+    .faq_nav a {
+        font-size: 14px;
+    }
+    .announcements-section {
+        box-shadow: unset;
+        padding: 0;
+    }
+    .bannerTxt {
+        left: 20px;
+        bottom: 50px;
+    }
+    .bannerTxt h2 {
+        font-size: 25px;
+        margin: 0;
+    }
+    #bannerSlider .item img {
+        height: 230px;
+        object-fit: cover;
+    }
+    .control {
+        position: static;
+        width: 100%;
+        filter: invert(1);
+        margin: 3px 0 10px;
+    }
+    .footer {
+        padding: 30px 10px 0;
+    }
+    .footer .site_logo {
+        width: 250px;
+    }
+    .about-hero-content h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about-hero-content p {
+        font-size: 18px;
+    }
+    .customPanel2 h3 {
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+    .galleryPageContent ul {
+        grid-template-columns: 1fr;
+    }
+    .galleryPageContent li figure img {
+        height: 350px;
+    }
+    .rules_sec ul {
+        grid-template-columns: 1fr;
+    }
+    .general_content h2 {
+        font-size: 29px;
+    }
+    .mvv-grid,
+    .functions-grid {
+        grid-template-columns: 1fr;
+    }
+    .hTxt h2 {
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .mission-vision,
+    .key-functions {
+        padding: 50px 0;
+    }
+    .general_content p {
+        font-size: 16px;
+    }
+    .honorPanel ul {
+        grid-template-columns: 1fr;
+    }
+    .general_content h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .general_content {
+        padding: 10px 0 20px;
+    }
+    .imgBox img {
+        width: 360px;
+    }
+}
