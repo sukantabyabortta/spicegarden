@@ -6,7 +6,8 @@ img {
     display: block;
 }
 
-.siteLogo {
+.siteLogo,
+.org-info h1 {
     width: 210px;
     display: block;
     margin: 0;
