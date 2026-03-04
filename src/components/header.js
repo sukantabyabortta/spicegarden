@@ -10,7 +10,7 @@ function Header({ logo, contact, languages }) {
           <div className="logo-section">
             <div className="org-info">
               <h1>
-                <Link to="https://sukantabyabortta.github.io/spicegarden">
+                <Link className="siteLogo" to="https://sukantabyabortta.github.io/spicegarden">
                       <img src={logo} alt="Site Logo" />
                 </Link>
               </h1>
