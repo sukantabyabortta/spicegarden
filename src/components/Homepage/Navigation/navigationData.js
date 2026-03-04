@@ -3,7 +3,7 @@
 const navData = [
   {
     label: "Home",
-    path: "/"
+    path: "https://sukantabyabortta.github.io/spicegarden"
   },
   {
     label: "About",
