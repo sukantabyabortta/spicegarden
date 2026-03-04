@@ -10,7 +10,7 @@ function About({ showHero = true, showBreadcrumbs = true, showChefs = true }) {
   const { intro, valuesSection } = aboutData;
   
   const breadcrumbs = [
-    { label: "Home", link: "/" },
+    { label: "Home", link: "/spicegarden" },
     { label: "About Us" },
   ];
   return (
