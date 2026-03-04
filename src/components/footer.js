@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function Footer({
   logo,
   description,
@@ -15,9 +16,9 @@ function Footer({
 
           {/* Logo + Contact */}
           <div className="footer-section">
-            <a href="/" className="footerLogo">
-              <img src={logo} alt="Logo" />
-            </a>
+            <Link className="footerLogo" to="https://sukantabyabortta.github.io/spicegarden">
+                <img src={logo} alt="Site Logo" />
+            </Link>
             <p>{description}</p>
 
             <div className="contact-info">
