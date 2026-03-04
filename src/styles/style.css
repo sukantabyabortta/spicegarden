@@ -7,7 +7,7 @@ img {
 }
 
 .siteLogo,
-.org-info h1 {
+.org-info h1 a {
     width: 210px;
     display: block;
     margin: 0;
