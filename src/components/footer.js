@@ -16,7 +16,7 @@ function Footer({
 
           {/* Logo + Contact */}
           <div className="footer-section">
-            <Link className="footerLogo" to="https://sukantabyabortta.github.io/spicegarden">
+            <Link className="footerLogo" to="/spicegarden">
                 <img src={logo} alt="Site Logo" />
             </Link>
             <p>{description}</p>
