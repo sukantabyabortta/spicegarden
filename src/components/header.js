@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Header({ logo, contact, languages }) {
   return (
     <header className="header">
@@ -8,9 +10,9 @@ function Header({ logo, contact, languages }) {
           <div className="logo-section">
             <div className="org-info">
               <h1>
-                <a href="/" className="siteLogo">
-                  <img src={logo} alt="Logo" />
-                </a>
+                <Link to="https://sukantabyabortta.github.io/spicegarden">
+                      <img src={logo} alt="Site Logo" />
+                </Link>
               </h1>
             </div>
           </div>
