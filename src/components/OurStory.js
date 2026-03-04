@@ -33,7 +33,7 @@ function OurStory() {
   };
 
   const breadcrumbs = [
-    { label: "Home", link: "/" },
+    { label: "Home", link: "/spicegarden" },
     { label: "Our Story" },
   ];
 
