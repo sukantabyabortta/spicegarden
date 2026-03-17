@@ -5,6 +5,11 @@
     display: block;
 }
 
+.siteLogo img {
+    width: 100%;
+    height: auto;
+}
+
 .announcements-section {
     background: white;
     border-radius: 12px;
